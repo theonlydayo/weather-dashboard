@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+        <link rel="stylesheet" href="style.css">
+        <title>Weather Dashboard</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <p>Hi,</p>
+                <h1>Good Morning</h1>
+            </div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" type="text" placeholder="Search your location">
+            </div>
+
+            <div class="left">
+                <div class="card weather">
+                    <div class="weather-top">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span id="city">Lagos, Nigeria</span>
+                        </div>
+
+                        <div class="unit">
+                            °C
+                        </div>
+                    </div>
+
+                    <h2 id="day">Sunday</h2>
+                    <span id="date">04 Aug,2024</span>
+
+                    <div class="weather-content">
+
+                        <img id="weather-icon" src="images/rain.png">
+
+                        <div class="temp">
+                            <h1 id="temperature">28°C</h1>
+                            <span id="min-temp">/24°C</span>
+                            <h3 id="condition">Heavy Rain</h3>
+                            <p id="feels-like">Feels like 31°</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card countries">
+                    <div class="title">
+                        <h2>Others Countries</h2>
+                    </div>
+
+                    <div class="country">
+                        <div>
+                            <small>Australia</small>
+                            <h3>Canberra</h3>
+                            <p>Sunny</p>
+                        </div>
+
+                        <img src="images/sun.png">
+                        <h2>32°<span>/24°</span></h2>
+                    </div>
+
+                    <div class="country">
+                        <div>
+                            <small>Japan</small>
+                            <h3>Tokyo</h3>
+                            <p>Mostly Sunny</p>
+                        </div>
+
+                        <img src="images/sunny.png">
+                        <h2>30°<span>/19°</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="card">
+                    <h2>Today's Highlight</h2>
+
+                    <div class="highlight-grid">
+                        <div class="highlight">
+                            <div class="highlight-title">
+                                <img src="images/wind.png" alt="Wind">
+                                <span>Wind Status</span>
+                            </div>
+
+                            <h3 id="wind">7.90 <small>km/h</small></h3>
+                            <p>9:00 AM</p>
+                        </div>
+
+                        <div class="highlight">
+                            <div class="highlight-title">
+                                <img src="images/humidity.png" alt="Humidity">
+                                <span>Humidity</span>
+                            </div>
+
+                            <h3 id="humidity">85%</h3>
+                            <p>Humidity is good</p>
+                        </div>
+
+                        <div class="highlight">
+                            <div class="highlight-title">
+                                <img src="images/sunrise.png" alt="Sunrise">
+                                <span>Sunrise</span>
+                            </div>
+
+                            <h3 id="sunrise">4:50 AM</h3>
+                        </div>
+
+                        <div class="highlight">
+                            <div class="highlight-title">
+                                <img src="images/uv.png" alt="UV Index">
+                                <span>UV Index</span>
+                            </div>
+
+                            <h3 id="uv">4 UV</h3>
+                            <p>Moderate UV</p>
+                        </div>
+
+                        <div class="highlight">
+                            <div class="highlight-title">
+                                <img src="images/visibility.png" alt="Visibility">
+                                <span>Visibility</span>
+                            </div>
+
+                            <h3 id="visibility">5 km</h3>
+                            <p>9:00 AM</p>
+                        </div>
+
+                        <div class="highlight">
+                            <div class="highlight-title">
+                                <img src="images/sunset.png" alt="Sunset">
+                                <span>Sunset</span>
+                            </div>
+
+                            <h3 id="sunset">6:45 PM</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>5 Day Forecast</h2>
+
+                    <div id="forecast" class="forecast">
+                        <div class="day">
+                            <p>Mon</p>
+                            <img src="images/rain-small.png">
+                            <h3>31°C</h3>
+                        </div>
+
+                        <div class="day">
+                            <p>Tue</p>
+                            <img src="images/sunny.png">
+                            <h3>27°C</h3>
+                        </div>
+
+                        <div class="day">
+                            <p>Wed</p>
+                            <img src="images/rain-small.png">
+                            <h3>29°C</h3>
+                        </div>
+
+                        <div class="day">
+                            <p>Thu</p>
+                            <img src="images/storm.png">
+                            <h3>32°C</h3>
+                        </div>
+
+                        <div class="day">
+                            <p>Fri</p>
+                            <img src="images/sun.png">
+                            <h3>32°C</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
